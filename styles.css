@@ -1,0 +1,393 @@
+html {
+    box-sizing:border-box;
+}
+*, *::before, *::after {box-sizing:inherit;}
+
+body {
+    background-image: url("./assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position-x: -264px;
+    background-position-y: 0px;
+    font-family: 'Century Gothic', 'Futura', sans-serif;
+}
+
+.container {
+    width:1000px;
+    margin:auto;
+    justify-content: center;
+    font-family: 'Century Gothic', 'Futura', sans-serif;
+}
+
+
+
+.social {
+    display:flex;
+    justify-content: flex-end;
+    font-size: 50px;
+}
+
+i {
+    color: #ccc;
+    align-items:center;
+    
+}
+.social > div{
+    display:flex;
+    width: 70px;
+    height: 70px;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.social  div:nth-child(1){
+    background: rgb(71,89,147);
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+    
+}
+
+.social div:nth-child(2){
+    background: rgb(196,145,69);
+    box-shadow: 0px 4px rgba(0,0,0,0.15);
+}
+.social div:nth-child(3){
+    background: rgb(112,141,194);
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+.social div:nth-child(4){
+    background: rgb(165,65,52);
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.navigation {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    column-gap:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.navigation label {
+    padding:10px 20px;
+    background:rgb(166,53,52);
+    text-align:center;
+    color:white;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.subscribe {
+    display:flex;
+    justify-content: flex-end;
+    color:white;
+    font-size: 12px;
+    
+}
+
+.tbar {
+    display:flex;
+    justify-content:flex-end;
+}
+
+.topimage {
+    background-image: url("./assets/top-image.png");
+    background-repeat: no-repeat;
+    background-position-x: -119px;
+    background-position-y: -138px;
+    background-size: 146%;
+    height: 350px;
+    width:100%;
+    border: 10px solid white;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+.topimage img{
+    padding: 45px 10px;
+}
+
+
+
+.rbutton{
+    text-align:center;
+    margin-top: 30px;
+    
+}
+
+.articles {
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    column-gap:10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.article1 {
+    padding: 10px 20px;
+    background: white;
+    color:rgb(54,55,49);
+    line-height:23px;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.article2 {
+    padding: 10px 20px;
+    background: white;
+    color:rgb(54,55,49);
+    line-height:23px;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.article3 {
+    padding: 10px 20px;
+    background: white;
+    color:rgb(54,55,49);
+    line-height:23px;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+
+
+#alink1 {
+    text-align:center;
+}
+
+#alink1 {
+    text-align:center;
+    font-size:13px;
+}
+
+#alink1 > a{
+    color:red;
+    font-weight:bold;
+}
+
+#alink2 {
+    text-align:center;
+    font-weight:bold;
+    font-size:13px;
+}
+
+#alink2 > a{
+    color:red;
+    font-weight:bold;
+}
+
+#alink3 {
+    text-align:center;
+}
+
+#alink3 > a {
+    color:red;
+    font-weight:bold;
+    font-size:13px;
+}
+
+#date1 {
+    color:gray;
+    font-size:13px;
+}
+
+#date2 {
+    color:gray;
+    font-size:13px;
+}
+
+#date3 {
+    color:gray;
+    font-size:13px;
+}
+
+#ap1 {
+    font-size:13px;
+}
+
+#ap2 {
+    font-size:13px;
+}
+
+#ap3 {
+    font-size:13px;
+}
+
+.grid2 {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas:
+        "lance rodney tommy"
+        "steve steve tommy";
+    width: 1000px;
+    height:500px;
+    margin-top:30px;
+    margin-bottom:30px;
+    
+}
+
+.lance {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    padding:20px;
+    background-image: url(./assets/sk8er-4.png);
+    border: 5px solid white;
+    background-repeat: no-repeat;
+    background-size: 151%;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    background-position-x: -160px;
+    background-position-y: -6px;
+    grid-area: lance;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.rodney {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    padding:20px;
+    background-image: url(./assets/sk8er-3.png);
+    border: 5px solid white;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    background-position-x: -35px;
+    background-position-y: -10px;
+    background-repeat: no-repeat;
+    background-size: 154%;
+    grid-area: rodney;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.tommy {
+    display:flex;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background-image: url(./assets/sk8er-2.png);
+    border: 5px solid white;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    background-repeat: no-repeat;
+    background-position-x: -473px;
+    background-position-y: -5px;
+    background-size: 288%;
+    grid-area: tommy;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.steve {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background-image: url(./assets/sk8er-1.png);
+    border: 5px solid white;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    background-repeat: no-repeat;
+    background-position-x:1px;
+    background-position-y:-81px;
+    background-size: 100%;
+    grid-area: steve;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.boards {
+    display:flex;
+    background:white;
+    justify-content:space-between;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding:15px;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+}
+
+.footer {
+    display:flex;
+    background:white;
+    line-height:25px;
+    width:1000px;
+    height:350px;
+    padding:30px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 4px rgb(0,0,0,0.15);
+
+
+}
+
+
+.icon {
+    display:flex;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+i {
+    color: #ccc;
+    align-items:center;
+    
+}
+.icon > div{
+    display:flex;
+    width: 30px;
+    height: 30px;
+    margin:5px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.icon  div:nth-child(1){
+    background: rgb(79,79,79);
+    
+}
+
+.icon div:nth-child(2){
+    background: rgb(174,174,174);
+}
+.icon div:nth-child(3){
+    background: rgb(123,123,123);
+}
+.icon div:nth-child(4){
+    background: rgb(117,117,117);
+}
+
+.form {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    width: 1000px;
+    }
+
+input, ::placeholder {
+    padding: 5px;
+    font-family:'Century Gothic', 'Futura', sans-serif;
+    font-size:15px;
+    
+    
+}
+
+input[type=submit] { 
+        background: rgb(166,53,52); 
+        color:white;
+        font-size:15px;
+        height:50px;
+        width:300px;
+        
+    }
+
+textarea {
+    font-family: 'Century Gothic', 'Futura', sans-serif;
+    font-size:15px;
+    padding:10px;
+    color:gray;
+    border:1px solid gray;
+    
+
+}
